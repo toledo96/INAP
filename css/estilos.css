@@ -113,7 +113,7 @@ header .contenedor-texto .texto h1{
 
 .main .nosotros .texto .bold{
     color: #3895ea;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 /* -------------------------------FIN MAIN NOSOTROS ----------------------------------- */
@@ -149,7 +149,8 @@ header .contenedor-texto .texto h1{
 }
 
 .main .proyectos .contenedor .contenedor-trabajos .trabajos{
-    width: 23%;
+    width: 48%;
+    height: 50%;
     margin-bottom: 40px;
 }
 
@@ -161,7 +162,7 @@ header .contenedor-texto .texto h1{
 .main .proyectos .contenedor .contenedor-trabajos .trabajos img{
     width: 100%;
     vertical-align: top;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -314,7 +315,7 @@ footer .contacto .formulario textarea{
 footer .contacto .formulario input[type="text"]:hover,
 footer .contacto .formulario input[type="email"]:hover,
 footer .contacto .formulario textarea:hover{
-    border: 2px solid #011B4A;
+    border: 2px solid #FFD626;
 }
 
 
@@ -378,8 +379,11 @@ footer .redes a{
 
 }
 
-footer .rede h2{
+
+
+footer .redes h2{
     text-align: center;
+    color: #FFD626;
 }
 
 footer .contacto .contenedor .titulo{
@@ -403,5 +407,166 @@ footer .redes .insta:hover{
 
 
   
+
+/* -------------------------------------- MEDIA QUERIES ----------------------------------- */
+
+@media screen and (max-width: 800px){
+    header .menu{
+        text-align: left;
+    }
+
+    header .menu a{
+        margin: 0 5px;
+        color: #fff;
+        padding-bottom: 9px;
+        display: inline-block;
+        text-decoration: none;
+        /* hace que no de un salto a la hora de poner el cursor en la opción del navbar */
+        border-bottom: 2px solid transparent;  
+        /* 1em = 16px    */
+        font-size: 1em;
+    }
+
+    header .contenedor-texto .texto{
+        border: 3px solid rgba(255, 255, 255,0.5);
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        padding: 20px 30px;
+    }
+
+    .main .nosotros .texto{
+        text-align : justify;
+        color: #5a5a5a;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 30px;
+        width: 100%;
+        margin: 40px auto 30px auto ;
+    }
+
+
+    .main .proyectos .contenedor-titulo .titulo{
+        height: 90%; 
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #dd820d;
+        font-size: 30px;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .main .proyectos .contenedor .contenedor-trabajos .trabajos{
+        width: 46%;
+    }
+
+    .servicios .contenedor-titulo .titulo{
+        height: 90%; 
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #dd820d;
+        font-size: 30px;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .servicios .contenedor .icono{
+        width: 150px;
+        height: 100px;
+    }
+
+    .servicios .contenedor .lista .liPrincipal{
+        /* height: 90%; 
+        width:100%;
+        /* display:flex; */
+        align-items: center;
+        justify-content: start;
+        font-weight: 400;
+        /* color: #dd820d; */
+        font-size: 25px;
+        margin-left: -120px;
+        /* -webkit-text-stroke: 1px black; */
+    }
+    
+    .servicios .contenedor .lista  .liSecundaria{
+        /* display:flex;
+        align-items: center; */
+        font-weight: 400;
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-left: -80px;
+        /* margin-left: 75px; */
+        /* margin-left: 75 px; */
+        /* list-style-type: circle; */
+    }
+
+    .main .valores .titulo{
+        height: 90%; 
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: #011B4A;
+        font-size: 25px;
+        text-align: center;
+        -webkit-text-stroke: 1px black;
+    }
+
+    footer .contacto .formulario input[type="text"],
+    footer .contacto .formulario input[type="email"],
+    footer .contacto .formulario textarea{
+        border: 2px solid #cecece;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 20px;
+        
+    }
+
+    footer .contacto .formulario .boton{
+        margin:auto;
+        background-color: #387bea ;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 40px;
+        width: 70%;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    footer .redes h2{
+        text-align: center;
+        color: #FFD626;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
