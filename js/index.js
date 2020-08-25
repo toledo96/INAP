@@ -9,19 +9,29 @@ $(document).ready(function(){
 
 });
 
-function Enviar(){
-    // alert("mensaje enviado");
-    Email.send({
-        Host : "smtp.gmail.com",
-        secureToken:'2fb3e88b-a61b-442b-bab2-f187d59035fe',
-        Username : "atm1996.ast@gmail.com",
-        Password : "contagiate001",
-        To:"atm1996.ast@gmail.com",
-        From:"Noe@gmail.com",
-        Subject:"Contacto pagina",
-        Body: "Hola",
 
-    }).then(
-        message => alert(message)
-    );
+
+function Enviar(){
+    var correo = document.getElementById("correo").value;
+    var mensaje = document.getElementById("mensaje").value;
+    var nombre = document.getElementById("nombre").value;
+
+    if(correo!="" && mensaje!="" && nombre!="" ){
+        Email.send({
+            Host : "smtp.gmail.com",
+            secureToken:'2fb3e88b-a61b-442b-bab2-f187d59035fe',
+            Username : "ingeneriaaplicada.inap@gmail.com",
+            Password : "Almo6874",
+            To:"ingeneriaaplicada.inap@gmail.com",
+            From: correo,
+            Subject:"Persona interesada,con el nombre de:" +nombre,
+            Body: mensaje,
+    
+        }).then(
+            message => alert(message)
+            // location.href="index.html"
+        );
+    }else{
+        alert("Faltan campos por llenar");
+    }
 }
