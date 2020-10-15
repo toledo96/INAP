@@ -22,6 +22,31 @@ body{
 
 /* ------------------------HEADER----------------------- */
 
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background-color: white;
+    padding: 0;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 20px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: black !important;
+    font-weight: 600;
+}
+
 header{
     background:url('../img/encabezado2.1.jpg');
     background-repeat: no-repeat;
@@ -45,7 +70,7 @@ header .contenedor-texto .texto{
     padding: 20px 60px;
     margin-top: -250px;
     margin-left: -20px;
-    font-size: 20px;
+    font-size: 50px;
 }
 
 header .contenedor-texto .texto h1{
@@ -71,6 +96,10 @@ header .contenedor-texto .texto h1{
 
 .main .nosotros .foto{
     margin-top: -65px;
+}
+
+.main .nosotros p{
+    color: black;
 }
 
 .main .nosotros .foto img{
@@ -532,7 +561,7 @@ footer .redes .insta:hover{
         display: inline-block;
         text-align: center;
         padding: 50px 20px;
-        color: black;
+        font-weight: 600;
     }
 
     .main .nosotros .texto{
@@ -558,7 +587,7 @@ footer .redes .insta:hover{
     }
 
     .main .proyectos .contenedor .contenedor-trabajos .trabajos{
-        width: 46%;
+        width: 100%;
     }
 
     .servicios .contenedor-titulo .titulo{
@@ -603,30 +632,8 @@ footer .redes .insta:hover{
     }
 
   
-    footer .contacto .formulario input[type="text"],
-    footer .contacto .formulario input[type="email"],
-    footer .contacto .formulario textarea{
-        border: 2px solid #cecece;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 20px;
-        
-    }
-
-    footer .contacto .formulario .boton{
-        margin:auto;
-        background-color: #8e0021 ;
-        border: none;
-        border-radius: 5px;
-        padding: 15px 40px;
-        width: 70%;
-        font-size: 20px;
-        color: white;
-        cursor: pointer;
-    }
-    
-    footer .contacto .formulario .boton:hover{
-        background: #6c001a ;
+    .imagen-edificio{
+        background-image: rgba(0, 0, 0, 0.5);
     }
 
 
