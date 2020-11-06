@@ -20,13 +20,14 @@
     <script src="js/image-popup.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="img/logo2.jpg" class="img-fluid" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="img/avatar.png" class="img-fluid nav-img" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -67,6 +68,9 @@
             </div>
         </div>
     </header>
+    <div class="container-fluid mt-5" data-aos="flip-right">
+        <img src="img/cover.jpg" class="img-fluid" alt="">
+    </div>
 <!-- ----------FIN-HEADER---------- -->
 
 
@@ -83,11 +87,11 @@
             </div>
 
 
-            <div class="contenedor-trabajos">
+            <div class="contenedor-trabajos" >
 
                 <div class="trabajos">
                     <div class="thumb">
-                        <img class="popup" src="img/1.jpg" height="220px" alt="Imagen 1">
+                        <img class="popup" src="img/1.jpg" height="220px" alt="Imagen 1" data-aos="flip-up">
                     </div>
                     <!-- <div class="descripcion">
                             <p class="nombre">Nombre</p>
@@ -97,73 +101,47 @@
 
                 <div class="trabajos">
                     <div class="thumb">
-                        <img class="popup" src="img/2.jpg" height="220px" alt="Imagen 1">
+                        <img class="popup" src="img/2.jpg" height="220px" alt="Imagen 1" data-aos="flip-up">
                     </div>
-                    <!-- <div class="descripcion">
-                            <p class="nombre">Nombre</p>
-                            <p class="categoria">HTML - CSS - PHP</p>
-                        </div> -->
                 </div>
 
                 <div class="trabajos">
                     <div class="thumb">
-                        <img class="popup" src="img/3.jpg" height="220px" alt="Imagen 1">
+                        <img class="popup" src="img/3.jpg" height="220px" alt="Imagen 1" data-aos="flip-up">
                     </div>
-                    <!-- <div class="descripcion">
-                            <p class="nombre">Nombre</p>
-                            <p class="categoria">HTML - CSS - PHP</p>
-                        </div> -->
                 </div>
 
                 <div class="trabajos">
                     <div class="thumb">
-                        <img class="popup" src="img/4.jpg" height="220px" alt="Imagen 1">
+                        <img class="popup" src="img/4.jpg" height="220px" alt="Imagen 1" data-aos="flip-up">
                     </div>
-                    <!-- <div class="descripcion">
-                            <p class="nombre">Nombre</p>
-                            <p class="categoria">HTML - CSS - PHP</p>
-                        </div> -->
                 </div>
 
                 <div class="trabajos">
                     <div class="thumb">
-                        <img class="popup" src="img/5.jpg" height="220px" alt="Imagen 1">
+                        <img class="popup" src="img/5.jpg" height="220px" alt="Imagen 1" data-aos="flip-up">
                     </div>
-                    <!-- <div class="descripcion">
-                            <p class="nombre">Nombre</p>
-                            <p class="categoria">HTML - CSS - PHP</p>
-                        </div> -->
                 </div>
 
                 <div class="trabajos">
                     <div class="thumb">
-                        <img class="popup" src="img/6.jpg" height="220px" alt="Imagen 1">
+                        <img class="popup" src="img/6.jpg" height="220px" alt="Imagen 1" data-aos="flip-up">
 
                     </div>
-                    <!-- <div class="descripcion">
-                            <p class="nombre">Nombre</p>
-                            <p class="categoria">HTML - CSS - PHP</p>
-                        </div> -->
+
                 </div>
 
                 <div class="trabajos">
                     <div class="thumb">
-                        <img class="popup" src="img/7.jpg" height="220px" alt="Imagen 1">
+                        <img class="popup" src="img/7.jpg" height="220px" alt="Imagen 1" data-aos="flip-up">
                     </div>
-                    <!-- <div class="descripcion">
-                            <p class="nombre">Nombre</p>
-                            <p class="categoria">HTML - CSS - PHP</p>
-                        </div> -->
+
                 </div>
 
                 <div class="trabajos">
                     <div class="thumb">
-                        <img class="popup" src="img/8.jpeg" height="220px" alt="Imagen 1">
+                        <img class="popup" src="img/8.jpeg" height="220px" alt="Imagen 1" data-aos="flip-up">
                     </div>
-                    <!-- <div class="descripcion">
-                            <p class="nombre">Nombre</p>
-                            <p class="categoria">HTML - CSS - PHP</p>
-                        </div> -->
                 </div>
 
             </div>
@@ -175,13 +153,16 @@
 
         <div class="contenedor-titulo">
             <h3 class="titulo">Servicios</h3>
+            <div class="text-center">
+                <img src="img/distintitoinap_page-0001 (1).jpg" class="img-fluid" alt="">
+            </div>
         </div>
 
         <div class="container">
 
             <div class="row mt-5">
                 <div class="col-md-12">
-                    <div class="servicio text-center">
+                    <div class="servicio text-center" data-aos="fade-up">
                         <img class="icono" src="img/construccion.svg" class="image-fluid" width="10%" alt="">
                         <h3>SERVICIOS PARA CONSTRUCCIÓN</h3>
                         <div class="parent">
@@ -202,7 +183,7 @@
 
             <div class="row mt-5">
                 <div class="col-md-12">
-                    <div class="servicio text-center">
+                    <div class="servicio text-center" data-aos="fade-up">
                         <img class="icono" src="img/grupo.svg" class="image-fluid" width="10%" alt="">
                         <h3>SERVICIOS PARA GESTIÓN</h3>
                         <div class="parent">
@@ -225,7 +206,7 @@
 
             <div class="row mt-5">
                 <div class="col-md-12">
-                    <div class="servicio text-center">
+                    <div class="servicio text-center" data-aos="fade-up">
                         <img class="icono" src="img/lista.svg" class="image-fluid" width="10%" alt="">
                         <h3>SERVICIOS PARA DICTAMINACIÓN</h3>
                         <div class="parent">
@@ -245,7 +226,7 @@
 
             <div class="row mt-5">
                 <div class="col-md-12">
-                    <div class="servicio text-center">
+                    <div class="servicio text-center" data-aos="fade-up">
                         <img class="icono" src="img/ingeniero.svg" class="image-fluid" width="10%" alt="">
                         <h3>SERVICIOS DE MANTENIMIENTO</h3>
                         <div class="parent">
@@ -276,7 +257,7 @@
 
     <section id="M&V" class="nosotros mt-5">
         <div class="container">
-            <div class="texto">
+            <div class="texto" data-aos="flip-right">
                 <h3 class="titulo">Misión y Visión</h3>
                 <p>
                     MISIÓN: Somos un equipo profesional de ingenieros y arquitectos,
@@ -286,7 +267,7 @@
                     alcanzar la completa satisfacción de nuestros clientes.
                 </p>
             </div>
-            <div class="texto">
+            <div class="texto" data-aos="flip-right">
                 <p>
                     VISIÓN: Ser una empresa constructora sólida, confiable y honesta que
                     se distingue por la ejecución de su trabajo y su servicio de calidad, realizados
@@ -300,13 +281,13 @@
 
     <div class="valores mb-5" style="text-align: center;">
 
-        <div class="contenedor">
-            <h2 style="margin-bottom: 20px;text-align: center;" class="titulo">Valores</h2>
+        <div class="contenedor" >
+            <h2 style="margin-bottom: 20px;text-align: center;" class="titulo" data-aos="flip-right">Valores</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mt-4">
+                    <div class="card mt-4" data-aos="flip-right">
                         <div class="card-header">
-                            <h6 class="text-center" style="color: #2fb8eb;font-size:20px;" class="card-title">HONESTIDAD</h6>
+                            <h6 class="text-center" style="color: #00aff0;font-size:20px;" class="card-title">HONESTIDAD</h6>
                         </div>
                         <div class="card-body">
                             
@@ -319,9 +300,9 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mt-4">
+                    <div class="card mt-4" data-aos="flip-right">
                         <div class="card-header">
-                            <h6 class="text-center" style="color: #2fb8eb;font-size:20px;" class="card-title">CALIDAD</h6>
+                            <h6 class="text-center" style="color: #eb3237;font-size:20px;" class="card-title">CALIDAD</h6>
                         </div>
                         <div class="card-body" style="padding-bottom: 43px;">                            
                             <p>
@@ -334,9 +315,9 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mt-4">
+                    <div class="card mt-4" data-aos="flip-right">
                         <div class="card-header">
-                            <h6 class="text-center" style="color: #2fb8eb;font-size:20px;" class="card-title">RESPONSABILIDAD</h6>
+                            <h6 class="text-center" style="color: #2e406d;font-size:20px;" class="card-title">RESPONSABILIDAD</h6>
                         </div>
                         <div class="card-body" style="padding-bottom: 58px;">                            
                             Nos comprometemos en cumplir las obligaciones adquiridas en tiempo y forma, de
@@ -351,6 +332,38 @@
 
     </div>
 
+    <section id="contacto" class="mt-5 bg-light">
+        <div class="container text-center pt-4 ">
+          <div class="mt-3" data-aos="flip-left">
+            <div class="dialogo">
+              <h2><b>Si gustas más información y una asesoria gratis ponte en contacto con nosotros llenando el siguiente
+                  formulario.</b></h2>
+            </div>
+            <form class="pb-5">
+              <div class="form-group text-left">
+                <label for="exampleInputEmail1"><b>Nombre</b></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Nombre completo">
+              </div>
+              <div class="form-group text-left">
+                <label for="exampleInputPassword1"><b>Correo</b></label>
+                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Correo">
+              </div>
+              <div class="form-group text-left">
+                <label for="exampleInputPassword1"><b>Número de telefono</b></label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Número de teléfono">
+              </div>
+              <div class="form-group text-left">
+                <label for="exampleInputPassword1"><b>Mensaje</b></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-info btn-lg btn-block btn1 ">Enviar</button>
+            </form>
+          </div>
+  
+        </div>
+      </section>
+
 
 
 </section>
@@ -362,7 +375,7 @@
 
 <footer>
 
-    <section class="redes">
+    <section class="redes" data-aos="fade-up">
         <h2 style="font-weight: 700;" class="mb-5">Redes Sociales</h2>
         <div class="contenedor">
             <a class="face" target="_blank" href="https://www.facebook.com/inap.ingenieriaaplicada"><i class="fa fa-facebook-official"
@@ -370,34 +383,34 @@
             <a class="whats" target="_blank"
                 href="https://api.whatsapp.com/send?phone=5219612415437&text=Hola!%20Estamos%20a%20sus%20ordenes"><i
                     class="fa fa-whatsapp" aria-hidden="true"></i></a>
-            <!-- <a class="insta" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a> -->
         </div>
 
     </section>
-    <div class="svg-wrapper">
+    <div class="svg-wrapper"  data-aos="fade-down">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path fill="#ffff" fill-opacity="1" d="M0,128L30,128C60,128,120,128,180,160C240,192,300,256,360,256C420,256,480,192,540,160C600,128,660,128,720,149.3C780,171,840,213,900,202.7C960,192,1020,128,1080,90.7C1140,53,1200,43,1260,42.7C1320,43,1380,53,1410,58.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+            <path fill="#fff" fill-opacity="1" d="M0,128L30,128C60,128,120,128,180,160C240,192,300,256,360,256C420,256,480,192,540,160C600,128,660,128,720,149.3C780,171,840,213,900,202.7C960,192,1020,128,1080,90.7C1140,53,1200,43,1260,42.7C1320,43,1380,53,1410,58.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
         </svg>
     </div>
     
-    <div class="footer">
+    <div class="footer" data-aos="fade-down">
         <div class="container footer">
             <div class="row">
                 <div class="col-md-6 caja-footer text-center">
-                    <!-- aqui va el logo -->
-                    <img src="img/logo2.jpg" class="image-fluid mb-3 mt-4" width="150px" alt="">
-                    <h2>Ingeniería Aplicada</h2>
+                    <img src="img/logoinap_page-0001-removebg-preview.png" class="image-fluid mb-3 mt-4" width="200px" height="200px" alt="">
+                    <!-- <h2>Ingeniería Aplicada</h2> -->
                 </div>
                 <div class="col-md-6 caja-footer mt-3">
                    <p><b>CONTACTANOS</b></p>
-                   <p><i class="fa fa-map-marker" aria-hidden="true"></i> INAP, Tuxtla Gutierréz <br> direccion del lugar </p>
-                   <p><i class="fa fa-phone" aria-hidden="true"></i> 961 241 5437</p>
+                   <p><i class="fa fa-map-marker" aria-hidden="true"></i> INAP, Tuxtla Gutierréz <br> 16 poniente norte #187 local 5, Colonia Arboledas </p>
+                   <p><i class="fa fa-phone" aria-hidden="true"></i> 961 104 9166</p>
                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> inap@outlook.com</p>
                 </div>
 
             </div>
         </div>
     </div>
+
+
 
 </footer>
 
@@ -409,6 +422,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

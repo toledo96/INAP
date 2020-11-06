@@ -20,6 +20,7 @@ body{
     overflow: hidden;
 }
 
+
 /* ------------------------HEADER----------------------- */
 
 #nav-bar{
@@ -27,6 +28,7 @@ body{
     top: 0;
     z-index: 10;
 }
+
 
 .navbar{
     background-color: white;
@@ -90,8 +92,13 @@ header .contenedor-texto .texto h1{
 .main .contenedor{
     overflow: visible;
 }
+
+/* fondo inap */
 .main .nosotros{
-    text-align: center;
+    padding-top: 0;
+    background: url(../img/distintitoinap_page-0001\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main .nosotros .foto{
@@ -133,12 +140,18 @@ header .contenedor-texto .texto h1{
 
 
 /* --------------------------------- MAIN PROYECTOS ----------------------------------- */
+
+.main .proyectos{
+    background-color: #f5f5f5;
+}
+
 .main .proyectos  .contenedor-titulo{
-    background-color: #fff;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    
+    background-color: #f5f5f5;
+    margin-top: 70px;
     width: 100%;
     height: 80px;
+    
 }
 
 .main .proyectos .contenedor-titulo .titulo{
@@ -154,6 +167,7 @@ header .contenedor-texto .texto h1{
 }
 
 .main .proyectos .contenedor .contenedor-trabajos{
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -178,9 +192,6 @@ header .contenedor-texto .texto h1{
     /* cursor: pointer; */
 }
 
-/* .main .proyectos .contenedor .contenedor-trabajos .trabajos .thumb:hover img {
-    opacity: 0.2;
-  } */
 
 .main .proyectos .contenedor .contenedor-trabajos .descripcion{
     text-align: center;
@@ -336,11 +347,11 @@ footer .contacto .formulario .boton:hover{
 
 
 footer{
-    background-color: #eeedec;
+    background-color: #eb3237;
 }
 
 footer .redes{
-    background-color: #eeedec;
+    /* background-color: #eeedec; */
     padding: 30px 0;
 }
 
@@ -350,14 +361,14 @@ footer .redes .contenedor {
 }
 
 footer .redes a{
-    color: black;
+    color:white;
     text-align: center;
     width: 100px;
     display: block;
     padding: 10px 0;
     border-radius: 5px;
     font-size: 25px;
-    background: #eeedec;
+    background: #eb3237;
     margin: 0 20px;
 
 }
@@ -366,7 +377,7 @@ footer .redes a{
 
 footer .redes h2{
     text-align: center;
-    color: #011B4A;
+    color: white;
 }
 
 footer .contacto .contenedor .titulo{
@@ -374,11 +385,11 @@ footer .contacto .contenedor .titulo{
 }
 
 footer .redes .face:hover{
-    background-color: #e5e3e0;
+    background-color: #e82528;
 }
 
 footer .redes .whats:hover{
-    background-color: #e5e3e0
+    background-color: #e82528
 }
 
 footer .redes .insta:hover{
@@ -538,8 +549,15 @@ footer .redes .insta:hover{
 }
 
 @media screen and (max-width: 500px){
+
+    .main .nosotros{
+        padding-top: 0;
+        background: url(../img/distintitoinap_page-0001\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+    }
     
-        header .menu{
+    header .menu{
         text-align: left;
     }
 
@@ -636,5 +654,5 @@ footer .redes .insta:hover{
         background-image: rgba(0, 0, 0, 0.5);
     }
 
-
+    
 }
